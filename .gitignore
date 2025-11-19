@@ -1,0 +1,8 @@
+# DB, sessions, virtualenvs, pycache, secrets
+finance.db
+flask_session/
+__pycache__/
+*.pyc
+.env
+.env.*
+.vscode/

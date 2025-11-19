@@ -1,0 +1,5 @@
+{% extends "layout.html" %}
+{% block main %}
+  <h2>Quote Result</h2>
+  <p>{{ quote.name }} ({{ quote.symbol }}) — {{ quote.price | usd }}</p>
+{% endblock %}

@@ -1,0 +1,109 @@
+/* ---------- KayNet Global Theme ---------- */
+
+:root {
+    --bg1: #0A1A2F;
+    --bg2: #0F2A45;
+    --accent: #34E4C2;
+    --text: #ffffff;
+    --muted: #b8c2cc;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --border: rgba(255, 255, 255, 0.12);
+}
+
+body {
+    background: linear-gradient(180deg, var(--bg1), var(--bg2));
+    background-attachment: fixed;
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* ---------- Navbar ---------- */
+
+.navbar {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text);
+    background: rgba(10, 20, 40, 0.4);
+    backdrop-filter: blur(8px);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    height: 30px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+}
+
+.nav-link {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--accent);
+}
+
+/* ---------- Page Content ---------- */
+
+h1, h2, h3, h4 {
+    color: var(--text);
+}
+
+.container-fluid {
+    padding: 40px 80px;
+}
+
+table {
+    width: 100%;
+    background: var(--card-bg);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    color: var(--text);
+}
+
+th, td {
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* ---------- Buttons ---------- */
+
+button, .btn-primary {
+    background: var(--accent) !important;
+    border: none !important;
+    color: #000 !important;
+    font-weight: 600;
+}
+
+button:hover, .btn-primary:hover {
+    opacity: 0.9;
+}
+
+/* ---------- Forms ---------- */
+
+.form-control {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.form-control::placeholder {
+    color: var(--muted);
+}
